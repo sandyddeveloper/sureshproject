@@ -1,0 +1,102 @@
+
+
+    .navbar {
+        background: linear-gradient(to right, #4CAF50, #6A0DAD);
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-brand {
+        color: white !important;
+        font-size: 1.5rem;
+    }
+
+    .navbar .nav-link {
+        color: white !important;
+        font-weight: 500;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .navbar .nav-link:hover {
+        color: #bcd81cf6 !important;
+        text-decoration: underline 2px;
+        scroll-behavior: smooth;
+    }
+
+    .hero-section {
+        height: 70vh;
+        background: linear-gradient(to right, rgba(26, 149, 151, 0.7), rgba(231, 169, 34, 0.6)),
+            url('hero-image.jpg') center/cover no-repeat;
+        border-radius: 20px;
+    }
+
+    .hero-section h1 span {
+        color: #b8a10b;
+    }
+    span{
+        color: #46074e;
+        font-size: 23px;
+        font-weight: 400;
+    }
+
+    .btn-success {
+        background-color: #4CAF50;
+        border-color: #4CAF50;
+    }
+
+    .btn-outline-light {
+        border-color: #6A0DAD;
+        color: #6A0DAD;
+    }
+
+    .btn-outline-light:hover {
+        background-color: #6A0DAD;
+        color: #fff;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .animate-fade-in {
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    .animate-slide-up {
+        animation: slideUp 1s ease-in-out;
+    }
+
+    .card {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        margin-top: 20px;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .card img {
+        height: 180px;
+        object-fit: cover;
+        border-radius: 8px 8px 0 0;
+    }
